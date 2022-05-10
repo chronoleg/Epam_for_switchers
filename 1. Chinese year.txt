@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int year, reminder=0,n=1;
+        System.out.println("Enter the year of your birth:");
+        Scanner sc = new Scanner(System.in);
+        year = sc.nextInt();
+        while (n==1)
+        {
+        if (year<0||year>2022)
+        {
+            System.out.println("Please enter the correct year:");
+            year = sc.nextInt();
+                    }
+        else
+            {
+            n=0;
+        }
+            reminder = year % 12;
+        }
+        switch (reminder) {
+            case 0 -> System.out.println("Your year is Monkey");
+            case 1 -> System.out.println("Your year is Rooster");
+            case 2 -> System.out.println("Your year is Dog");
+            case 3 -> System.out.println("Your year is Pig");
+            case 4 -> System.out.println("Your year is Rat");
+            case 5 -> System.out.println("Your year is Ox");
+            case 6 -> System.out.println("Your year is Tiger");
+            case 7 -> System.out.println("Your year is Rabbit");
+            case 8 -> System.out.println("Your year is Dragon");
+            case 9 -> System.out.println("Your year is Snake");
+            case 10 -> System.out.println("Your year is Horse");
+            case 11 -> System.out.println("Your year is Goat");
+        }
+    }
+}
